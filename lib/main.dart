@@ -8,9 +8,18 @@ void main() {
         appBar: AppBar(title: Text("Home Page")),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Image.network(url,width: 100,height: 100,fit: BoxFit.cover,),
+            Image.network(url,width: double.infinity,height: 250,fit: BoxFit.cover,),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+              Icon(Icons.share,color: Colors.amber,size: 40,),
+              Icon(Icons.navigation,color: Colors.amber,size: 40,),
+              Icon(Icons.favorite,color: Colors.amber,size: 40,),
+            ],),
+
             Text("My Car",style: TextStyle(fontSize: 25.0)),
             Text(description,style: TextStyle(fontSize: 14.0))
           ],
