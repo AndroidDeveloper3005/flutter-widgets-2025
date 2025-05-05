@@ -8,19 +8,51 @@ void main() {
         appBar: AppBar(title: Text("Home Page")),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          //mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.network(url,width: double.infinity,height: 250,fit: BoxFit.cover,),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              Icon(Icons.share,color: Colors.amber,size: 40,),
-              Icon(Icons.navigation,color: Colors.amber,size: 40,),
-              Icon(Icons.favorite,color: Colors.amber,size: 40,),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Bandroband",style: TextStyle(fontSize: 25.0)),
+                    Text("bangladesh",style: TextStyle(fontSize: 14.0))
+                  ],
+                ),
+              Row(
+                children: [
+                  Icon(Icons.star,color: Colors.amber,size: 20,),
+                  Text("41",style: TextStyle(fontSize: 14.0))
+                ],
+              ),
             ],),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.phone,color: Colors.amber,size: 20,),
+                    Text("Call",style: TextStyle(fontSize: 14.0))
+                  ],
+                ),                Column(
+                  children: [
+                    Icon(Icons.route,color: Colors.amber,size: 20,),
+                    Text("Route",style: TextStyle(fontSize: 14.0))
+                  ],
+                ),                Column(
+                  children: [
+                    Icon(Icons.share,color: Colors.amber,size: 20,),
+                    Text("Share",style: TextStyle(fontSize: 14.0))
+                  ],
+                ),
+              ],
+            ),
 
-            Text("My Car",style: TextStyle(fontSize: 25.0)),
             Text(description,style: TextStyle(fontSize: 14.0))
           ],
         ),
