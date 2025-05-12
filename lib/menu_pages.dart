@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/counter_app.dart';
 import 'package:widgets/home_page.dart';
 
 class MenuPages extends StatelessWidget {
@@ -25,6 +26,16 @@ class MenuPages extends StatelessWidget {
                 );
               },
               child: Text("Go Home"),
+            ),
+            ElevatedButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CounterApp()),
+                );
+              },
+              child: Text("Counter App Page"),
             ),
           ],
         ),
