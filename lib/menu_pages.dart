@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/counter_app.dart';
 import 'package:widgets/home_page.dart';
+import 'package:widgets/input_field_widget.dart';
 
 class MenuPages extends StatelessWidget {
   const MenuPages({super.key});
@@ -36,6 +37,16 @@ class MenuPages extends StatelessWidget {
                 );
               },
               child: Text("Counter App Page"),
+            ),
+            ElevatedButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InputFieldWidget()),
+                );
+              },
+              child: Text("Input Field Widget"),
             ),
           ],
         ),
