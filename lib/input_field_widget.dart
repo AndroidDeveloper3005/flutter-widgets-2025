@@ -31,7 +31,8 @@ class _InputFieldWidgetState extends State<InputFieldWidget> {
                 onPressed: (){
                   print(nameController.text);
                 },
-                child: Text("Ok"))
+                child: Text("Ok")
+            )
           ],
         ),
       ),

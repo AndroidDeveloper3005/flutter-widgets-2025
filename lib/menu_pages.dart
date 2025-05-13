@@ -3,6 +3,8 @@ import 'package:widgets/counter_app.dart';
 import 'package:widgets/home_page.dart';
 import 'package:widgets/input_field_widget.dart';
 
+import 'checkbox_widget.dart';
+
 class MenuPages extends StatelessWidget {
   const MenuPages({super.key});
 
@@ -47,6 +49,16 @@ class MenuPages extends StatelessWidget {
                 );
               },
               child: Text("Input Field Widget"),
+            ),
+            ElevatedButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Checkbox_Radio_Widget()),
+                );
+              },
+              child: Text("CheckBox & Radio Widget"),
             ),
           ],
         ),
