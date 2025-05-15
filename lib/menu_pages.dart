@@ -15,52 +15,62 @@ class MenuPages extends StatelessWidget {
         backgroundColor: Color(0xFFB12525),
         title: Text("Menu Page"),
       ),
-      body: Center(
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ElevatedButton(
-
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                );
-              },
-              child: Text("Go Home"),
-            ),
-            ElevatedButton(
-
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CounterApp()),
-                );
-              },
-              child: Text("Counter App Page"),
-            ),
-            ElevatedButton(
-
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => InputFieldWidget()),
-                );
-              },
-              child: Text("Input Field Widget"),
-            ),
-            ElevatedButton(
-
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Checkbox_Radio_Widget()),
-                );
-              },
-              child: Text("CheckBox & Radio Widget"),
-            ),
-          ],
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 26, 2, 80),
+              Color.fromARGB(255, 50, 19, 131),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: const Center(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                child: Text("Go Home"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CounterApp()),
+                  );
+                },
+                child: Text("Counter App Page"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => InputFieldWidget()),
+                  );
+                },
+                child: Text("Input Field Widget"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Checkbox_Radio_Widget(),
+                    ),
+                  );
+                },
+                child: Text("CheckBox & Radio Widget"),
+              ),
+            ],
+          ),
         ),
       ),
     );
