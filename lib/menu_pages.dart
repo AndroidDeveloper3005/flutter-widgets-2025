@@ -26,7 +26,7 @@ class MenuPages extends StatelessWidget {
             end: Alignment.bottomRight,
           ),
         ),
-        child: const Center(
+        child: Center(
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
@@ -38,7 +38,7 @@ class MenuPages extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => HomePage()),
                   );
                 },
-                child: Text("Go Home"),
+                child: const Text("Go Home"),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -47,7 +47,7 @@ class MenuPages extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => CounterApp()),
                   );
                 },
-                child: Text("Counter App Page"),
+                child: const Text("Counter App Page"),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -56,7 +56,7 @@ class MenuPages extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => InputFieldWidget()),
                   );
                 },
-                child: Text("Input Field Widget"),
+                child: const Text("Input Field Widget"),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -67,7 +67,7 @@ class MenuPages extends StatelessWidget {
                     ),
                   );
                 },
-                child: Text("CheckBox & Radio Widget"),
+                child: const Text("CheckBox & Radio Widget"),
               ),
             ],
           ),
